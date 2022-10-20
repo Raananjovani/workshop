@@ -1,7 +1,7 @@
 2  version: '3.8'
 3  services:
 4  jenkins:
-5  image: raananjovani/jenkins_node:v2.2
+5  image: raananjovani/jenkins_node:v2.4
 restart: unless-stopped
 privileged: true
 user: admin
