@@ -5,4 +5,5 @@ use the <docker compose up -d > to setup the container.
 
 jenkins will not need any initialization, its ready to use out of the box. 
 
+this image has been created using the repo dockerfile
 # docker hub image for jenkins raananjovani/jenkins_node:v2.4
