@@ -6,7 +6,10 @@ services:
     environment:
       JAVA_OPTS: -Djenkins.install.runSetupWizard=false
       JENKINS_OPTS: --argumentsRealm.roles.user=admin --argumentsRealm.passwd.admin=admin --argumentsRealm.roles.admin=admin
+      
     
     ports:
       - 8080:8080
     container_name: jenkins_for_ibex
+
+    
