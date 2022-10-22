@@ -1,5 +1,4 @@
 FROM jenkins/jenkins:latest
-ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 USER root
 RUN apt-get update && apt-get install -y lsb-release
 RUN curl -fsSLo /usr/share/keyrings/docker-archive-keyring.asc \
@@ -12,3 +11,4 @@ RUN apt-get update && apt-get install -y docker-ce-cli
 USER jenkins
 RUN jenkins-plugin-cli --plugins "maven-plugin:3.20"
 RUN jenkins-plugin-cli --plugins "email-ext:2.92"
+

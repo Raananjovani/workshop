@@ -2,14 +2,7 @@ version: '3'
 
 services:
   jenkins:
-    image: raananjovani/jenkins_node:v2.4
-    environment:
-      JAVA_OPTS: -Djenkins.install.runSetupWizard=false
-      JENKINS_OPTS: --argumentsRealm.roles.user=admin --argumentsRealm.passwd.admin=admin --argumentsRealm.roles.admin=admin
-      
-    
+    image: raananjovani/jenkins_node:v2.8
     ports:
       - 8080:8080
-    container_name: jenkins_for_ibex
-
-    
+    container_name: jenkinsforibex
