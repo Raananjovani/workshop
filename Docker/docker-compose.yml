@@ -2,7 +2,10 @@ version: '3'
 
 services:
   jenkins:
-    image: raananjovani/jenkins_node:v2.8
+    image: raananjovani/jenkins_node:v3
+    environment:
+      JAVA_OPTS: -Djenkins.install.runSetupWizard=false  
+    
     ports:
       - 8080:8080
     container_name: jenkinsforibex
