@@ -7,7 +7,7 @@ services:
       - 8080:8080 
     container_name: jenkinsforibex
     volumes: 
-      - ./ibexdata:/var/jenkins_home/
+      - ibexdata:/var/jenkins_home/
 
 volumes:
  ibexdata:
