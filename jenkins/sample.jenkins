@@ -4,7 +4,7 @@ pipeline {
         stage("verify python version") {
             steps {
                 sh 'python3 --version
-                    print ("version is ok")'
+                    print("version is ok")'
             }
         }
         // stage("run python script") {
