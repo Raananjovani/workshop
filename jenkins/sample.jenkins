@@ -12,5 +12,10 @@ pipeline {
                 '''
             }
         }
+        stage("run python script") {
+            steps {
+                sh 'python script.py'
+            }
+        }
     }
 }
