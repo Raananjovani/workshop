@@ -1,20 +1,14 @@
 pipeline {
     agent any
     stages {
-        // stage("verify tooling") {
-        //     steps {
-        //         ssh '''
-        //            docker version
-        //            docker info
-        //            docker compose version
-        //            curl --version 
-        //            jq --version
-        //         '''
-        //     }
-        // }
+        stage("verify python version") {
+            steps {
+                sh 'python3 --version'
+            }
+        }
         stage("run python script") {
             steps {
-                sh 'python script.py'
+                sh 'python3 script.py'
             }
         }
     }
